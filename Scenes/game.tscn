@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvqkr5v5mqkhn"]
+
+[ext_resource type="Texture2D" uid="uid://wy8ghg0c5ai8" path="res://assets/separator.png" id="1_rx252"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Graphics" type="Node2D" parent="."]
+
+[node name="Background" type="ColorRect" parent="Graphics"]
+offset_right = 1080.0
+offset_bottom = 720.0
+color = Color(0, 0, 0, 1)
+
+[node name="Separator" type="Sprite2D" parent="Graphics"]
+position = Vector2(540, 360)
+scale = Vector2(1.8, 1.8)
+texture = ExtResource("1_rx252")
+
+[node name="ScoreLabel" type="Label" parent="Graphics"]
+offset_left = 520.0
+offset_right = 560.0
+offset_bottom = 23.0
+text = "0-0
+"
+horizontal_alignment = 1
+vertical_alignment = 1
