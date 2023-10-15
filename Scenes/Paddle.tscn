@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://drtbg8q7dw8sm"]
+
+[ext_resource type="Texture2D" uid="uid://bh2222erm70c7" path="res://assets/left_pallete.png" id="1_m1pgm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4xnxe"]
+size = Vector2(8, 32)
+
+[node name="Paddle" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_m1pgm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_4xnxe")
